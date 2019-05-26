@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mutations>
+  <category Name="KoboldScaleColorRed" DisplayName="&amp;WRed Scaled Powers", Exclusions="KoboldScaleColorBlue">
+    <mutation Name="Red" Cost="4" MaxSelected="1" Class="" Exclusions="" Code="aa"></mutation>
+  </category>
+  <category Name="KoboldScaleColorBlue" DisplayName="&amp;WBlue Scaled Powers", Exclusions="KoboldScaleColorRed">
+    <mutation Name="Blue" Cost="4" MaxSelected="1" Class="" Exclusions="" Code="aa"></mutation>
+  </category>
+</mutations>
+

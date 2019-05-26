@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+ <!-- 
+  Bodies
+  -->
+<object Name="KoboldHumanoid" Inherits="BaseHumanoid">
+    <part Name="Corpse" CorpseChance="90" CorpseBlueprint="Kobold Corpse" BodyDrop="true" InventoryDrop="true"></part>
+    <stat Name="Strength" sValue="8,1d3,(t)d1" />
+    <stat Name="Agility" sValue="12,1d3,(t)d1" />
+    <stat Name="Toughness" sValue="12,1d3,(t)d1" />
+    <stat Name="Intelligence" sValue="12,1d3,(t)d1" />
+    <stat Name="Willpower" sValue="12,1d3,(t)d1" />
+    <stat Name="Ego" sValue="12,1d3,(t)d1" />
+    <intproperty Name="Bleeds" Value="1" />
+    <property Name="LairTable" Value="Caves 1" />
+    <property Name="Role" Value="Minion" />
+    <mutation Name="DarkVision" Level="3" />
+    <intproperty Name="Humanoid" Value="1" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Humanoids" />
+    <tag Name="KnowsDirections" Value="1" />
+    <tag Name="Humanoid" />
+    <xtagTextFragments Activity="peering around as if afraid of being hunted,wiggling its tail as if in anticipation,hugging a weapon with anxiety" VillageActivity="eating sand or another tasty thing,practicing a poorly developed skill,smiling at everyone,staring at something covetously" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to inspire my art,to inspire my poetry,to be my muse,to help with farm work,for the games we play under the Beetle Moon" SacredThing="the act of procreating,philosophy,alcohol,grains of the earth,stone fruit,artistry,poetry,warm meals,bread and wine,pottery,painting" ArableLand="arable land,livestock,the bounty of the earth" ValuedOre="precious metals,artifacts,chrome,jasper,cybernetics,the nectar of the Eaters" />
+    <tag Name="SimpleConversation" Value="Tooth and tail.~Uh.~I love you, =player.formalAddressTerm=! Er, uh, bye!" />
+  </object>
+
+  <object Name="WatertailKoboldHumanoid" Inherits="KoboldHumanoid">
+    <intproperty Name="CarryBonusFlat" Value="40" />
+  </object>
+
+</objects>
