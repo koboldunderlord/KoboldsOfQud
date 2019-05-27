@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<populations>
+  <population Name="StartingGear_WatertailKobold">
+    <group Style="pickeach">
+      <table Name="StartingGear_Common"></table>
+
+      <object Blueprint="Silver Nugget" Number="4"></object>
+      <object Blueprint="Copper Nugget" Number="20"></object>
+      <object Blueprint="HalfFullWaterskin" Number="2"></object>
+      <object Blueprint="HalfFullCanteen" Number="1"></object>
+      <object Blueprint="EmptyWaterskin" Number="2"></object>
+      <object Blueprint="Dagger" Number="1"></object>
+      <object Blueprint="Woven Tunic" Number="1"></object>
+      <object Blueprint="Goat Jerky" Number="1-2"></object>
+      <object Blueprint="Cloth Robe" Number="1"></object>
+      <object Blueprint="Leather Moccasins" Number="1"></object>
+      <object Blueprint="Merchant's Token" Number="1"></object>
+
+      <table Name="#Junk 1" Number="3-4"></table>
+      <table Name="#Artifact 1" Number="2-3"></table>
+    </group>
+  </population>
+</populations>

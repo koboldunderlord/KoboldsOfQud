@@ -1,68 +1,70 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <subtypes>
   <class ID="KoboldClan" ChargenTitle="Select Clan" SingularTitle="clan">
-
-
-  	<subtype 
-  		Name="Warscale" 
-  		Code="ka" 
-  		Gear="StartingGear_Marauder"
-  		Tile="Assets_Content_Textures_Creatures_sw_snapjaw_rogue.bmp"
-  		BaseHPGain="1-4"
-  		DetailColor="r"
-  	>
-  	    <skills>
-	        <skill Name="Axe_Expertise" />
-	        <skill Name="Tactics" />
-	        <skill Name="Hurdle" />
-	        <skill Name="Tactics_Charge" />
-      	</skills>
-        <stat Name="Toughness" Bonus="2"></stat>
-        <chargeninfo>   &amp;c&#249;&amp;y &amp;C+2&amp;y Toughness
+    <subtype 
+      Name="Warscale" 
+      Code="ka" 
+      Gear="StartingGear_Marauder"
+      Tile="Assets_Content_Textures_Creatures_sw_snapjaw_warrior.bmp"
+      BaseHPGain="1-4"
+      DetailColor="R"
+      BodyObject="WarscaleKoboldHumanoid"
+    >
+      <part Name="Swarmer" ExtraBonus="2"></part>
+      <skills>
+        <skill Name="Axe" />
+        <skill Name="Axe_Expertise" />
+        <skill Name="Tactics" />
+        <skill Name="Tactics_Hurdle" />
+        <skill Name="Tactics_Charge" />
+      </skills>
+      <stat Name="Toughness" Bonus="2"></stat>
+      <chargeninfo>   &amp;c&#249;&amp;y &amp;C+2&amp;y Toughness
    &amp;c&#249;&amp;y Axe Expertise
    &amp;c&#249;&amp;y Hurdle, Charge
-   &amp;c&#249;&amp;y +1 max HP growth
-		</chargeninfo>
-  	</subtype>
+   &amp;c&#249;&amp;y Normal HP growth
+      </chargeninfo>
+    </subtype>
 
-  	<subtype 
-  		Name="Tinkerclaw" 
-  		Code="kb" 
-  		Gear="StartingGear_Tinker"
-  		Tile="Assets_Content_Textures_Creatures_sw_snapjaw_rogue.bmp"
-  		DetailColor="r"
-  	>
-  		<skills>
-	        <skill Name="Tinkering_GadgetInspector" />
-	        <skill Name="Tinkering_Disassemble" />
-	        <skill Name="Tinkering_ReverseEngineer" />
-	        <skill Name="Tinkering_Tinker1" />
-      	</skills>
-        <stat Name="Intelligence" Bonus="2"></stat>
-        <chargeninfo>   &amp;c&#249;&amp;y &amp;C+2&amp;y Intelligence
+    <subtype 
+      Name="Tinkerclaw" 
+      Code="kb" 
+      Gear="StartingGear_Tinker"
+      Tile="Assets_Content_Textures_Creatures_sw_snapjaw_rogue.bmp"
+      DetailColor="m"
+      CyberneticsLicensePoints="2"
+    >
+      <skills>
+        <skill Name="Tinkering_GadgetInspector" />
+        <skill Name="Tinkering_Disassemble" />
+        <skill Name="Tinkering_ReverseEngineer" />
+        <skill Name="Tinkering_Tinker1" />
+      </skills>
+      <stat Name="Intelligence" Bonus="2"></stat>
+      <chargeninfo>   &amp;c&#249;&amp;y &amp;C+2&amp;y Intelligence
    &amp;c&#249;&amp;y Gadget Inspector, Dissasmble,
    &amp;c&#249;&amp;y Reverse Engineer, Tinker 1, Start with an implant
-		</chargeninfo>
-  	</subtype>
+      </chargeninfo>
+    </subtype>
 
-  	<subtype 
-  		Name="Watertail" 
-  		Code="kc" 
-  		Gear="StartingGear_WaterMerchant" 
-  		Tile="Assets_Content_Textures_Creatures_sw_snapjaw_rogue.bmp"
-  		DetailColor="r"
-  		BodyObject="WatertailKoboldHumanoid"
-  	>
-  		<skills>
-	        <skill Name="Pistol_MenacingStare" />
-	        <skill Name="Persuasion_SnakeOiler" />
-	        <skill Name="Persuasion_Proselytize" />
-      	</skills>
-        <stat Name="Ego" Bonus="2"></stat>
-        <chargeninfo>   &amp;c&#249;&amp;y &amp;C+2&amp;y Ego
+    <subtype 
+      Name="Watertail" 
+      Code="kc" 
+      Gear="StartingGear_WatertailKobold" 
+      Tile="Assets_Content_Textures_Creatures_sw_snapjaw_hunter.bmp"
+      DetailColor="B"
+      BodyObject="WatertailKoboldHumanoid"
+    >
+      <skills>
+        <skill Name="Pistol_MenacingStare" />
+        <skill Name="Persuasion_SnakeOiler" />
+        <skill Name="Persuasion_Proselytize" />
+      </skills>
+      <stat Name="Ego" Bonus="2"></stat>
+      <chargeninfo>   &amp;c&#249;&amp;y &amp;C+2&amp;y Ego
    &amp;c&#249;&amp;y Menacing Stare, Snake Oiler, Prosletyze
    &amp;c&#249;&amp;y Bonus carry capacity
-		</chargeninfo>
-  	</subtype>
+      </chargeninfo>
+    </subtype>
   </class>
 </subtypes>
