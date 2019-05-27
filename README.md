@@ -2,6 +2,7 @@
 Kobold genotypes for Caves of Qud
 
 Programming + Design by Crom
+
 Writing by Mabel
 
 See our writing doc for our plans about culture, unqiue npcs, and more:
