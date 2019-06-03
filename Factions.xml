@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<factions>
+
+  <faction Name="Kobolds" Visible="True" InitialPlayerReputation="-100">
+    <feeling About="Snapjaws" Value="-425" />
+    <feeling About="*" Value="-100" />
+  </faction>
+</factions>

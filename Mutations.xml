@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <mutations>
-  <category Name="Kobold" DisplayName="&amp;WKobold">
-    <mutation Name="Kobold" Cost="99" MaxSelected="1" Class="KoboldMutation" Exclusions="*Morphotypes,*Physical,*PhysicalDefects,*Mental,*MentalDefects" Code="ka"></mutation>
+  <category Name="KoboldCategory" DisplayName="&amp;WKobold">
+    <mutation Name="Kobold" Cost="0" MaxSelected="1" Class="KoboldMutation" Exclusions="*Morphotypes,*Physical,*PhysicalDefects,*Mental,*MentalDefects" Code="ka"></mutation>
   </category>
-<!-- category Name="KoboldScaleColorRed" DisplayName="&amp;WRed Scaled Powers", Exclusions="KoboldScaleColorBlue">
-  <mutation Name="Red" Cost="4" MaxSelected="1" Class="TimeDilation" Exclusions="" Code="aa"></mutation>
-</category>
-<category Name="KoboldScaleColorBlue" DisplayName="&amp;WBlue Scaled Powers", Exclusions="KoboldScaleColorRed">
-  <mutation Name="Blue" Cost="4" MaxSelected="1" Class="Amnesia" Exclusions="" Code="ba"></mutation>
-</category -->
+  <category Name="KoboldCategoryRed" Stat="Ego" DisplayName="&amp;RRed Scales">
+    <mutation Name="&amp;RKobold Fire Resist" Cost="2" MaxSelected="1" Class="KoboldFireResist" Exclusions="*KoboldCategoryBlue" Code="kb"></mutation>
+  </category>
+  <category Name="KoboldCategoryBlue" Stat="Ego" DisplayName="&amp;BBlue Scales">
+    <mutation Name="&amp;BKobold Electric Resist" Cost="2" MaxSelected="1" Class="KoboldElectricResist" Exclusions="*KoboldCategoryRed" Code="kc"></mutation>
+  </category>
 </mutations>
 

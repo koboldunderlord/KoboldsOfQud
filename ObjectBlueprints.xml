@@ -5,7 +5,8 @@
   -->
 <object Name="KoboldHumanoid" Inherits="BaseHumanoid">
     <part Name="Swarmer"></part>
-    <mutation Name="Kobold" Class="KoboldMutation" />
+    <mutation Name="KoboldMutation"></mutation>
+    <part Name="Brain" Hostile="false" Factions="Kobolds-100"></part>
     <part Name="Corpse" CorpseChance="90" CorpseBlueprint="Kobold Corpse" BodyDrop="true" InventoryDrop="true"></part>
     <stat Name="Strength" sValue="8,1d3,(t)d1" />
     <stat Name="Agility" sValue="12,1d3,(t)d1" />
@@ -22,7 +23,7 @@
     <part Name="ConversationScript" ConversationID="Humanoids" />
     <tag Name="KnowsDirections" Value="1" />
     <tag Name="Humanoid" />
-    <xtagTextFragments Activity="peering around as if afraid of being hunted,wiggling its tail as if in anticipation,hugging a weapon with anxiety" VillageActivity="eating sand or another tasty thing,practicing a poorly developed skill,smiling at everyone,staring at something covetously" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to inspire my art,to inspire my poetry,to be my muse,to help with farm work,for the games we play under the Beetle Moon" SacredThing="the act of procreating,philosophy,alcohol,grains of the earth,stone fruit,artistry,poetry,warm meals,bread and wine,pottery,painting" ArableLand="arable land,livestock,the bounty of the earth" ValuedOre="precious metals,artifacts,chrome,jasper,cybernetics,the nectar of the Eaters" />
+    <xtagTextFragments Activity="peering around as if afraid of being hunted,wiggling its tail as if in anticipation,hugging a weapon with anxiety" VillageActivity="eating sand or another tasty thing,practicing a poorly developed skill,smiling at everyone,staring at something covetously" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to inspire my art,to inspire my poetry,to be my muse,to help with farm work,to remember a world lost,to find meaning for myself,to feel safer" SacredThing="imagining a better world,hero worship,alcohol,a long lost story,brethren,artistry,poetry,warm cuddles,simple pleasures,pottery,painting,friendship" ArableLand="fungal-laden caves,livestock,the ores of the earth" ValuedOre="precious metals,artifacts,chrome,jasper,cybernetics,the nectar of the Eaters" />
     <tag Name="SimpleConversation" Value="Tooth and tail.~Uh.~I love you, =player.formalAddressTerm=! Er, uh, bye!" />
   </object>
 
@@ -33,5 +34,67 @@
   <object Name="WatertailKoboldHumanoid" Inherits="KoboldHumanoid">
     <intproperty Name="CarryBonusFlat" Value="40" />
   </object>
+
+  <object Name="King Goldemar's Sceptre" Inherits="Warhammer2">
+    <part Name="Render" DisplayName="Goldemace" RenderString="\"></part>
+    <part Name="MeleeWeapon" RenderString="\" MaxStrengthBonus="2" BaseDamage="2" Skill="Cudgel" Stat="Ego"></part>
+    <part Name="Commerce" Value="120"></part>
+    <part Name="Description" Short="This knot of iron must have once been some kind of tool, but the shift of continental plates during its long stay underground has warped it beyond recognition. When it was dug up, some artisan engraved every facet and flange of its surface with the symbology of their lightless world - with wear, these symbols are rendered illegible and are thus elevated: information present but forever obscure."></part>
+    <part Name="EquipStatBoost" Boosts="Ego:1" ChargeUse="0" IsBootSensitive="false" IsEMPSensitive="false"/>
+  </object>
+
+  <object Name="KoboldKingGoldemar" Inherits="KoboldHumanoid">
+    <part Name="Render" DisplayName="King Goldemar" ColorString="&amp;C" RenderLayer="10" RenderIfDark="false" Tile="Creatures/sw_snapjaw_howler.bmp" RenderString="G" DetailColor="y"></part>
+    <tag Name="OverlayColor" Value="&amp;C"></tag>
+    <stat Name="Strength" sValue="16"></stat>
+    <stat Name="Agility" sValue="20"></stat>
+    <stat Name="Toughness" sValue="20"></stat>
+    <stat Name="Intelligence" sValue="16"></stat>
+    <stat Name="Willpower" sValue="28"></stat>
+    <stat Name="Ego" sValue="24"></stat>
+    <part Name="ConversationScript" ConversationID="KoboldKingGoldemar"></part>
+    <property Name="Humanoid" Value="1"></property>
+    <tag Name="KnowsDirections" Value="1"></tag>
+    <tag Name="ExcludeFromDynamicEncounters"></tag>
+    <stat Name="Hitpoints" Value="45" />
+    <stat Name="Level" Value="12" />
+    <tag Name="Gender" Value="male" />
+    <tag Name="PronounSet" Value="they/them" />
+    <xtagGrammar Proper="true" />
+    <property Name="WontSell" Value="King Goldemar's Sceptre" />
+    <skill Name="Cudgel" />
+    <skill Name="Cudgel_Expertise" />
+    <skill Name="Cudgel_Bludgeon" />
+    <skill Name="Tactics_Charge" />
+    <skill Name="Shield" />
+    <skill Name="Shield_Block" />
+    <skill Name="Shield_Slam" />
+    <skill Name="Pistol_MenacingStare" />
+    <inventoryobject Blueprint="Leather Armor" Number="1" />
+    <inventoryobject Blueprint="Leather Boots" Number="1" />
+    <inventoryobject Blueprint="Boar-skin gloves" Number="1" />
+    <inventoryobject Blueprint="Steel Buckler" Number="1" />
+    <inventoryobject Blueprint="King Goldemar's Sceptre" Number="1" />
+    <inventoryobject Blueprint="Ape Fur Cloak" Number="1" />
+    <xtagWaterRitual NoJoin="false" SellSkill="Pistol_MenacingStare" />
+    <part Name="GivesRep" />
+    <!-- tag Name="staticFaction3" Value=",friend,developing a quantum mechanical model" />
+    <tag Name="staticFaction2" Value=",dislike,=pronouns.possessive= queer appearance" />
+    <tag Name="staticFaction1" Value=",hate,questioning the legitimacy of their hierarchies" / -->
+    <mutation Name="Telepathy" Level="1" />
+    <mutation Name="Phasing" Level="1" />
+    <mutation Name="Confusion" Level="1" />
+    <mutation Name="Clairvoyance" Level="3" />
+    <part Name="Description" Short="A shape hunches beneath the weight of an enormous ape-fur cloak. Its face is visible, as are its hands, but your eyes seem to passively slide off them, some suggestible part of you insisting that you not do this creature the violence of definition. It carries an ornately-carved knot of metal tipped with a crooked spike - whatever psionic qualms it has about being seen don’t seem to apply to the knowledge that it is armed." />
+  </object>
+
+  <!--
+        <tag Name="HeroNamePrefixes" Value="Sa,Se,Si,So,Saw,Sew,Siy,Sol,Ma,Ko,Qua,Po,Ko,Asa,Al,Kar,Mo"></tag>
+    <tag Name="HeroNamePrefixAmount" Value="1"></tag>
+    <tag Name="HeroNameInfixes" Value="aru,kor,mak,nik,tuk,tik,lok,bak,ro,ru,dol,las,reg,gan"></tag>
+    <tag Name="HeroNameInfixAmount" Value="0-3"></tag>
+    <tag Name="HeroNamePostfixes" Value="retz,rah,tep,raq,roq,mir,bas,d,scar,nuel,wer,qat,kat,ur,cheb,q,un,uun,amal,rem,yover,m,kas,viv,h,u,l,va,sh,da,yon"></tag>
+    <tag Name="HeroNamePostfixAmount" Value="1"></tag>
+-->
 
 </objects>

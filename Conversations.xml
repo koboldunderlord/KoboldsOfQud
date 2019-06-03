@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+
+  <conversation ID="KoboldKingGoldemar">
+    <node ID="Start">
+      <text>
+  Kobold King Goldemar.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+  </conversation>
+
+</conversations>
