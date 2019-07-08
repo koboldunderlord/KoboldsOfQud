@@ -5,7 +5,7 @@
       Name="Warscale" 
       Code="ka" 
       Gear="StartingGear_Marauder"
-      Tile="Assets_Content_Textures_Creatures_sw_snapjaw_warrior.bmp"
+      Tile="Creatures/Kobold_Warscale.png"
       BaseHPGain="1-4"
       DetailColor="R"
       BodyObject="WarscaleKoboldHumanoid"
@@ -30,7 +30,7 @@
       Name="Tinkerclaw" 
       Code="kb" 
       Gear="StartingGear_Tinker"
-      Tile="Assets_Content_Textures_Creatures_sw_snapjaw_rogue.bmp"
+      Tile="Creatures/Kobold_Tinkerclaw.png"
       DetailColor="m"
       CyberneticsLicensePoints="2"
     >
@@ -51,7 +51,7 @@
       Name="Watertail" 
       Code="kc" 
       Gear="StartingGear_WatertailKobold" 
-      Tile="Assets_Content_Textures_Creatures_sw_snapjaw_hunter.bmp"
+      Tile="Creatures/Kobold_Watertail.png"
       DetailColor="B"
       BodyObject="WatertailKoboldHumanoid"
     >
