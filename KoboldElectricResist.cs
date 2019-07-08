@@ -7,9 +7,6 @@ namespace XRL.World.Parts.Mutation
   [Serializable]
   public class KoboldElectricResist : BaseMutation
   {
-    [NonSerialized]
-    public static Event eRechargeAvailable = new Event("RechargeAvailable", "Charge", 0);
-
     public Guid ChargeCellsActivatedAbilityID = Guid.Empty;
     public ActivatedAbilityEntry ChargeCellsActivatedAbility;
 
