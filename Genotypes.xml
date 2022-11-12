@@ -1,21 +1,58 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <genotypes>
-  <genotype Name="Kobold" MutationPoints="4" StatPoints="38" AllowedMutationCategories="KoboldScaleColorRed,KoboldScaleColorBlue" RandomWeight="50" DisplayName="Kobold" Subtypes="KoboldClan" Class="" Code="k" Reputation="Kobolds:400" Tile="Assets_Content_Textures_Creatures_sw_snapjaw_rogue.bmp" BodyObject="KoboldHumanoid" BaseHPGain="1-3" BaseSPGain="70" BaseMPGain="0">
-    <mutation Name="KoboldMutation"></mutation>
-    <stat Name="Strength" Minimum="8" Maximum="20"></stat>
+  <genotype Name="Warscale" MutationPoints="12" StatPoints="38" AllowedMutationCategories="*" RandomWeight="50" DisplayName="Kobold Warscale" Subtypes="KoboldColorWarscale" Class="" Code="kw" Reputation="Kobolds:400" Tile="Creatures/Kobold_Warscale.png" BodyObject="WarscaleKoboldHumanoid" BaseHPGain="1-4" BaseSPGain="70" IsMutant="true" BaseMPGain="1" DetailColor="B" species="kobold">
+    <stat Name="Strength" Minimum="11" Maximum="20"></stat>
     <stat Name="Agility" Minimum="10" Maximum="24"></stat>
-    <stat Name="Toughness" Minimum="10" Maximum="24"></stat>
+    <stat Name="Toughness" Minimum="12" Maximum="24"></stat>
     <stat Name="Intelligence" Minimum="10" Maximum="24"></stat>
     <stat Name="Willpower" Minimum="10" Maximum="24"></stat>
     <stat Name="Ego" Minimum="10" Maximum="24"></stat>
-    <skills>
+    <extrainfo>+1 Strength, +2 Toughness</extrainfo>
+    <extrainfo>Axe Expertise, Hurdle, Charge</extrainfo>
+    <extrainfo>Normal HP growth</extrainfo>
+    <extrainfo>Darkvision</extrainfo>
+     <skills>
       <skill Name="Tactics_Run"></skill>
       <skill Name="Survival_Camp"></skill>
     </skills>
-    <chargeninfo>
-   &amp;c&#249;&amp;y Weaker attributes
-   &amp;c&#249;&amp;y Unique Physical Mutations powered by ego
-   &amp;c&#249;&amp;y Lower HP growth with high SP growth
-   &amp;c&#249;&amp;y Darkvision</chargeninfo>
+    <tag Name="Kobold" />
+  </genotype>
+
+
+  <genotype Name="Tinkerclaw" MutationPoints="12" StatPoints="38" AllowedMutationCategories="*" RandomWeight="50" DisplayName="Kobold Tinkerclaw" Subtypes="KoboldColorTinkerclaw" Class="" Code="kt" Reputation="Kobolds:400" Tile="Creatures/Kobold_Tinkerclaw.png" BodyObject="TinkerclawKoboldHumanoid" BaseHPGain="1-3" BaseSPGain="70" IsMutant="true" BaseMPGain="1" DetailColor="B" CyberneticsLicensePoints="2" species="kobold">
+    <stat Name="Strength" Minimum="10" Maximum="20"></stat>
+    <stat Name="Agility" Minimum="11" Maximum="24"></stat>
+    <stat Name="Toughness" Minimum="10" Maximum="24"></stat>
+    <stat Name="Intelligence" Minimum="12" Maximum="24"></stat>
+    <stat Name="Willpower" Minimum="10" Maximum="24"></stat>
+    <stat Name="Ego" Minimum="10" Maximum="24"></stat>
+    <extrainfo>+1 Agility, +2 Intelligence</extrainfo>
+    <extrainfo>Gadget Inspector, Dissasmble, Tinker 1, Trash Divining</extrainfo>
+    <extrainfo>Starts with implant</extrainfo>
+    <extrainfo>Weaker HP Growth</extrainfo>
+    <extrainfo>Darkvision</extrainfo>
+     <skills>
+      <skill Name="Tactics_Run"></skill>
+      <skill Name="Survival_Camp"></skill>
+    </skills>
+    <tag Name="Kobold" />
+  </genotype>
+
+  <genotype Name="Watertail" MutationPoints="12" StatPoints="38" AllowedMutationCategories="*" RandomWeight="50" DisplayName="Kobold Watertail" Subtypes="KoboldColorWatertail" Class="" Code="kw" Reputation="Kobolds:400" Tile="Creatures/Kobold_Watertail.png" BodyObject="WatertailKoboldHumanoid" BaseHPGain="1-3" BaseSPGain="70" IsMutant="true" BaseMPGain="1" DetailColor="B" species="kobold">
+    <stat Name="Strength" Minimum="10" Maximum="20"></stat>
+    <stat Name="Agility" Minimum="10" Maximum="24"></stat>
+    <stat Name="Toughness" Minimum="10" Maximum="24"></stat>
+    <stat Name="Intelligence" Minimum="10" Maximum="24"></stat>
+    <stat Name="Willpower" Minimum="11" Maximum="24"></stat>
+    <stat Name="Ego" Minimum="12" Maximum="24"></stat>
+    <extrainfo>+1 Willpower, +2 Ego</extrainfo>
+    <extrainfo>Menacing Stare, Snake Oiler, Prosletyze</extrainfo>
+    <extrainfo>+60 carry capacity</extrainfo>
+    <extrainfo>Darkvision</extrainfo>
+     <skills>
+      <skill Name="Tactics_Run"></skill>
+      <skill Name="Survival_Camp"></skill>
+    </skills>
+    <tag Name="Kobold" />
   </genotype>
 </genotypes>

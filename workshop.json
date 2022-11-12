@@ -1,0 +1,8 @@
+{
+  "WorkshopId": 2887041861,
+  "Title": "Kobolds of Qud",
+  "Description": "v0.3.6\n\nThis version adds kobolds into the game.  They may or may not spawn yet, but they're there.  \n\nYou can also play as 4 kobold scale colors with respective element resistance across 3 different kobold archetypes:\n\n- The Warscale, who gains standard hp and is well-equipped for combat\n- The Tinkerclaw, who is well-versed in tinkering, and while they cannot use cybernetics stations, they do get to start with one cybernetic\n- The Watertail, who is well-equipped to be a merchant, gaining extra equipment load on top of their base strength.\n\n- Programming + Design by Ames\n- Additional writing by Mabel\n- Art by Plugs\n\nGithub link here: https://github.com/koboldunderlord/KoboldsOfQud",
+  "Tags": "kobold,pack,creature,swarmer,yip",
+  "Visibility": "2",
+  "ImagePath": "preview.png"
+}

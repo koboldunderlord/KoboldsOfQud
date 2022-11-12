@@ -4,20 +4,75 @@
     <group Style="pickeach">
       <table Name="StartingGear_Common"></table>
 
-      <object Blueprint="Silver Nugget" Number="4"></object>
-      <object Blueprint="Copper Nugget" Number="20"></object>
-      <object Blueprint="HalfFullWaterskin" Number="2"></object>
-      <object Blueprint="HalfFullCanteen" Number="1"></object>
-      <object Blueprint="EmptyWaterskin" Number="2"></object>
-      <object Blueprint="Dagger" Number="1"></object>
-      <object Blueprint="Woven Tunic" Number="1"></object>
-      <object Blueprint="Goat Jerky" Number="1-2"></object>
-      <object Blueprint="Cloth Robe" Number="1"></object>
-      <object Blueprint="Leather Moccasins" Number="1"></object>
-      <object Blueprint="Merchant's Token" Number="1"></object>
+      <inventoryobject Blueprint="Silver Nugget" Number="4"></object>
+      <inventoryobject Blueprint="Copper Nugget" Number="20"></object>
+      <inventoryobject Blueprint="HalfFullWaterskin" Number="2"></object>
+      <inventoryobject Blueprint="HalfFullCanteen" Number="1"></object>
+      <inventoryobject Blueprint="EmptyWaterskin" Number="2"></object>
+      <inventoryobject Blueprint="Dagger" Number="1"></object>
+      <inventoryobject Blueprint="Woven Tunic" Number="1"></object>
+      <inventoryobject Blueprint="Goat Jerky" Number="1-2"></object>
+      <inventoryobject Blueprint="Cloth Robe" Number="1"></object>
+      <inventoryobject Blueprint="Leather Moccasins" Number="1"></object>
+      <inventoryobject Blueprint="Merchant's Token" Number="1"></object>
 
-      <table Name="#Junk 1" Number="3-4"></table>
-      <table Name="#Artifact 1" Number="2-3"></table>
+      <inventoryobject Name="@Junk 1" Number="3-4"></table>
+      <inventoryobject Name="@Artifact 1" Number="2-3"></table>
     </group>
   </population>
+
+  <population Name="RandomZoneTemplateFaction" Load="Merge">
+    <object Blueprint="KoboldHumanoid" />
+  </population>
+    
+  <population Name="RandomFaction" Load="Merge">
+    <object Blueprint="KoboldHumanoid" />
+  </population>
+
+  <population Name="RandomFaction_Period5" Load="Merge">
+    <object Blueprint="KoboldHumanoid" />
+  </population>
+
+  <population Name="KoboldParty0">
+    <group Name="Creatures" Style="pickeach">
+      <object Chance="100" Number="3-10" Blueprint="KoboldPants" />
+      <object Chance="100" Number="3-10" Blueprint="KoboldDress" />
+      <object Chance="33" Number="1" Blueprint="WarscaleKoboldHumanoid" />
+      <object Chance="33" Number="1" Blueprint="TinkerclawKoboldHumanoid" />
+      <object Chance="33" Number="1" Blueprint="WatertailKoboldHumanoid" />
+      <table Name="HumanoidEnvironmentFeatures" Chance="100" />
+      <table Name="KoboldParty0" Chance="10" />
+    </group>
+  </population>
+
+  <population Name="SaltMarshZoneGlobals" Load="Merge">
+    <group Chance="4" Name="ManyKobolds">
+      <table Name="KoboldParty0" Number="1" />
+    </group>
+    <group Chance="1" Name="ManyKobolds2">
+      <table Name="KoboldParty0" Number="4" />
+    </group>
+  </population>
+
+  <population Name="SaltDesertZoneGlobals" Load="Merge">
+    <group Chance="1" Name="ManyKobolds2">
+      <table Name="KoboldParty0" Number="4" />
+    </group>
+  </population>
+
+  <population Name="DesertCanyonZoneGlobals-Reachable" Load="Merge">
+    <group Chance="4" Name="ManyKobolds">
+      <table Name="KoboldParty0" Number="1" />
+    </group>
+    <group Chance="1" Name="ManyKobolds2">
+      <table Name="KoboldParty0" Number="4" />
+    </group>
+  </population>
+
+  <population Name="HillsZoneGlobals-Reachable">
+    <group Chance="2" Name="ManyKobolds">
+      <table Name="KoboldParty0" Number="4" />
+    </group>
+  </population>
+
 </populations>

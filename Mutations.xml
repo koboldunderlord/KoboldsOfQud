@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <mutations>
-  <category Name="KoboldCategory" DisplayName="&amp;WKobold">
+  <!-- <category Name="KoboldCategory" DisplayName="&amp;WKobold">
     <mutation Name="Kobold" Cost="0" MaxSelected="1" Class="KoboldMutation" Exclusions="*Morphotypes,*Physical,*PhysicalDefects,*Mental,*MentalDefects" Code="ka"></mutation>
   </category>
   <category Name="KoboldCategoryRed" Stat="Ego" DisplayName="&amp;RRed Scales">
@@ -8,6 +8,6 @@
   </category>
   <category Name="KoboldCategoryBlue" Stat="Ego" DisplayName="&amp;BBlue Scales">
     <mutation Name="&amp;BKobold Electric Resist" Cost="2" MaxSelected="1" Class="KoboldElectricResist" Exclusions="*KoboldCategoryRed" Code="kc"></mutation>
-  </category>
+  </category> -->
 </mutations>
 

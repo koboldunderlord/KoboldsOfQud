@@ -4,8 +4,8 @@
   Bodies
   -->
 <object Name="KoboldHumanoid" Inherits="BaseHumanoid">
+    <part Name="Render" DisplayName="Kobold" ColorString="&amp;w" RenderLayer="10" RenderIfDark="false" Tile="Creatures/Kobold_Pants.png" RenderString="G" DetailColor="c"></part>
     <part Name="Swarmer"></part>
-    <mutation Name="KoboldMutation"></mutation>
     <part Name="Brain" Hostile="false" Factions="Kobolds-100"></part>
     <part Name="Corpse" CorpseChance="90" CorpseBlueprint="Kobold Corpse" BodyDrop="true" InventoryDrop="true"></part>
     <stat Name="Strength" sValue="8,1d3,(t)d1" />
@@ -24,12 +24,11 @@
     <tag Name="KnowsDirections" Value="1" />
     <tag Name="Humanoid" />
     <xtagTextFragments Activity="peering around as if afraid of being hunted,wiggling its tail as if in anticipation,hugging a weapon with anxiety" VillageActivity="eating sand or another tasty thing,practicing a poorly developed skill,smiling at everyone,staring at something covetously" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to inspire my art,to inspire my poetry,to be my muse,to help with farm work,to remember a world lost,to find meaning for myself,to feel safer" SacredThing="imagining a better world,hero worship,alcohol,a long lost story,brethren,artistry,poetry,warm cuddles,simple pleasures,pottery,painting,friendship" ArableLand="fungal-laden caves,livestock,the ores of the earth" ValuedOre="precious metals,artifacts,chrome,jasper,cybernetics,the nectar of the Eaters" />
-    <tag Name="SimpleConversation" Value="Tooth and tail.~Uh.~I love you, =player.formalAddressTerm=! Er, uh, bye!" />
-    <tag Name="ExcludeFromDynamicEncounters"></tag>
-  </object>
-
-  <object Name="KoboldPants" Inherits="KoboldHumanoid" >
-    <part Name="Render" DisplayName="Kobold" ColorString="&amp;w" RenderLayer="10" RenderIfDark="false" Tile="Creatures/Kobold_Pants.png" RenderString="G" DetailColor="c"></part>
+    <tag Name="SimpleConversation" Value="Tooth and tail.~Uh.~I love you, =player.formalAddressTerm=! Er, uh, bye!~Yip!~Yip?~Yip...~YIP YIP YIP YIP" />
+    <tag Name="DynamicObjectsTable:DesertCanyon_Creatures" />
+    <tag Name="DynamicObjectsTable:Saltmarsh_Creatures" />
+    <tag Name="DynamicObjectsTable:Hills_Creatures" />
+    <part Name="Description" Short="=pronouns.Possessive= yips reach a place deep into your heart.  Please gently the kobold." />
   </object>
 
   <object Name="KoboldDress" Inherits="KoboldHumanoid" >
@@ -37,11 +36,29 @@
   </object>
 
   <object Name="WarscaleKoboldHumanoid" Inherits="KoboldHumanoid">
+    <part Name="Render" DisplayName="Kobold Warscale" ColorString="&amp;w" RenderLayer="10" RenderIfDark="false" Tile="Creatures/Kobold_Warscale.png" RenderString="G" DetailColor="c"></part>
     <part Name="Swarmer" ExtraBonus="2"></part>
+    <skill Name="Axe" />
+    <skill Name="Axe_Expertise" />
+    <skill Name="Tactics" />
+    <skill Name="Tactics_Hurdle" />
+    <skill Name="Tactics_Charge" />
   </object>
 
   <object Name="WatertailKoboldHumanoid" Inherits="KoboldHumanoid">
-    <intproperty Name="CarryBonusFlat" Value="40" />
+    <part Name="Render" DisplayName="Kobold Warscale" ColorString="&amp;w" RenderLayer="10" RenderIfDark="false" Tile="Creatures/Kobold_Watertail.png" RenderString="G" DetailColor="c"></part>
+    <part Name="WatertailWeightBonus"></part>
+    <skill Name="Persuasion_MenacingStare" />
+    <skill Name="Persuasion_SnakeOiler" />
+    <skill Name="Persuasion_Proselytize" />
+  </object>
+
+  <object Name="TinkerclawKoboldHumanoid" Inherits="KoboldHumanoid">
+    <part Name="Render" DisplayName="Kobold Warscale" ColorString="&amp;w" RenderLayer="10" RenderIfDark="false" Tile="Creatures/Kobold_Tinkerclaw.png" RenderString="G" DetailColor="c"></part>
+    <skill Name="Tinkering_GadgetInspector" />
+    <skill Name="Tinkering_Disassemble" />
+    <skill Name="Tinkering_Tinker1" />
+    <skill Name="Customs_TrashDivining" />
   </object>
 
   <object Name="King Goldemar's Sceptre" Inherits="Warhammer2">

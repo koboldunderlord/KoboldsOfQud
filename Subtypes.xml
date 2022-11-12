@@ -1,70 +1,56 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <subtypes>
-  <class ID="KoboldClan" ChargenTitle="Select Clan" SingularTitle="clan">
-    <subtype 
-      Name="Warscale" 
-      Code="ka" 
-      Gear="StartingGear_Marauder"
-      Tile="Creatures/Kobold_Warscale.png"
-      BaseHPGain="1-4"
-      DetailColor="R"
-      BodyObject="WarscaleKoboldHumanoid"
-    >
-      <part Name="Swarmer" ExtraBonus="2"></part>
-      <skills>
-        <skill Name="Axe" />
-        <skill Name="Axe_Expertise" />
-        <skill Name="Tactics" />
-        <skill Name="Tactics_Hurdle" />
-        <skill Name="Tactics_Charge" />
-      </skills>
-      <stat Name="Toughness" Bonus="2"></stat>
-      <chargeninfo>   &amp;c&#249;&amp;y &amp;C+2&amp;y Toughness
-   &amp;c&#249;&amp;y Axe Expertise
-   &amp;c&#249;&amp;y Hurdle, Charge
-   &amp;c&#249;&amp;y Normal HP growth
-      </chargeninfo>
+  <class ID="KoboldColorWarscale" ChargenTitle="Select Scale Color" SingularTitle="scale color">
+    <subtype Name="WarscaleBlue" DisplayName="Blue Scaled Warscale" Code="kb" Gear="StartingGear_Marauder" Tile="Creatures/Kobold_Warscale.png" DetailColor="B">
+      <stat Name="ColdResistance" Value="20" Minimum="20" />
     </subtype>
 
-    <subtype 
-      Name="Tinkerclaw" 
-      Code="kb" 
-      Gear="StartingGear_Tinker"
-      Tile="Creatures/Kobold_Tinkerclaw.png"
-      DetailColor="m"
-      CyberneticsLicensePoints="2"
-    >
-      <skills>
-        <skill Name="Tinkering_GadgetInspector" />
-        <skill Name="Tinkering_Disassemble" />
-        <skill Name="Tinkering_ReverseEngineer" />
-        <skill Name="Tinkering_Tinker1" />
-      </skills>
-      <stat Name="Intelligence" Bonus="2"></stat>
-      <chargeninfo>   &amp;c&#249;&amp;y &amp;C+2&amp;y Intelligence
-   &amp;c&#249;&amp;y Gadget Inspector, Dissasmble,
-   &amp;c&#249;&amp;y Reverse Engineer, Tinker 1, Start with an implant
-      </chargeninfo>
+    <subtype Name="WarscaleRed" DisplayName="Red Scaled Warscale" Code="kr" Gear="StartingGear_Marauder" Tile="Creatures/Kobold_Warscale.png" DetailColor="R">
+      <stat Name="HeatResistance" Value="20" Minimum="20" />
     </subtype>
 
-    <subtype 
-      Name="Watertail" 
-      Code="kc" 
-      Gear="StartingGear_WatertailKobold" 
-      Tile="Creatures/Kobold_Watertail.png"
-      DetailColor="B"
-      BodyObject="WatertailKoboldHumanoid"
-    >
-      <skills>
-        <skill Name="Pistol_MenacingStare" />
-        <skill Name="Persuasion_SnakeOiler" />
-        <skill Name="Persuasion_Proselytize" />
-      </skills>
-      <stat Name="Ego" Bonus="2"></stat>
-      <chargeninfo>   &amp;c&#249;&amp;y &amp;C+2&amp;y Ego
-   &amp;c&#249;&amp;y Menacing Stare, Snake Oiler, Prosletyze
-   &amp;c&#249;&amp;y Bonus carry capacity
-      </chargeninfo>
+    <subtype Name="WarscaleYellow" DisplayName="Yellow Scaled Warscale" Code="ky" Gear="StartingGear_Marauder" Tile="Creatures/Kobold_Warscale.png" DetailColor="W">
+      <stat Name="ElectricResistance" Value="20" Minimum="20" />
+    </subtype>
+
+    <subtype Name="WarscaleGreen" DisplayName="Green Scaled Warscale" Code="kg" Gear="StartingGear_Marauder" Tile="Creatures/Kobold_Warscale.png" DetailColor="G">
+      <stat Name="AcidResistance" Value="20" Minimum="20" />
+    </subtype>
+  </class>
+
+  <class ID="KoboldColorTinkerclaw" ChargenTitle="Select Scale Color" SingularTitle="scale color">
+    <subtype Name="TinkerclawBlue" DisplayName="Blue Scaled Tinkerclaw" Code="kb" Gear="StartingGear_Tinker" Tile="Creatures/Kobold_Tinkerclaw.png" DetailColor="B">
+      <stat Name="ColdResistance" Value="20" Minimum="20" />
+    </subtype>
+
+    <subtype Name="TinkerclawRed" DisplayName="Red Scaled Tinkerclaw" Code="kr" Gear="StartingGear_Tinker" Tile="Creatures/Kobold_Tinkerclaw.png" DetailColor="R">
+      <stat Name="HeatResistance" Value="20" Minimum="20" />
+    </subtype>
+
+    <subtype Name="TinkerclawYellow" DisplayName="Yellow Scaled Tinkerclaw" Code="ky" Gear="StartingGear_Tinker" Tile="Creatures/Kobold_Tinkerclaw.png" DetailColor="W">
+      <stat Name="ElectricResistance" Value="20" Minimum="20" />
+    </subtype>
+
+    <subtype Name="TinkerclawGreen" DisplayName="Green Scaled Tinkerclaw" Code="kg" Gear="StartingGear_Tinker" Tile="Creatures/Kobold_Tinkerclaw.png" DetailColor="G">
+      <stat Name="AcidResistance" Value="20" Minimum="20" />
+    </subtype>
+  </class>
+
+  <class ID="KoboldColorWatertail" ChargenTitle="Select Scale Color" SingularTitle="scale color">
+    <subtype Name="WatertailBlue" DisplayName="Blue Scaled Frosttail" Code="kb" Gear="StartingGear_WatertailKobold" Tile="Creatures/Kobold_Watertail.png" DetailColor="B">
+      <stat Name="ColdResistance" Value="20" Minimum="20" />
+    </subtype>
+
+    <subtype Name="WatertailRed" DisplayName="Red Scaled Watertail" Code="kr" Gear="StartingGear_WatertailKobold" Tile="Creatures/Kobold_Watertail.png" DetailColor="R">
+      <stat Name="HeatResistance" Value="20" Minimum="20" />
+    </subtype>
+
+    <subtype Name="WatertailYellow" DisplayName="Yellow Scaled Watertail" Code="ky" Gear="StartingGear_WatertailKobold" Tile="Creatures/Kobold_Watertail.png" DetailColor="W">
+      <stat Name="ElectricResistance" Value="20" Minimum="20" />
+    </subtype>
+
+    <subtype Name="WatertailGreen" DisplayName="Green Scaled Watertail" Code="kg" Gear="StartingGear_WatertailKobold" Tile="Creatures/Kobold_Watertail.png" DetailColor="G">
+      <stat Name="AcidResistance" Value="20" Minimum="20" />
     </subtype>
   </class>
 </subtypes>
